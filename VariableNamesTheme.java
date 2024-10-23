@@ -8,8 +8,8 @@ class VariableNamesTheme {
         System.out.println("Цифра " + digit);
 
         // Сумма чисел
-        int sumNum = 10;
-        System.out.println("Сумма чисел = " + sumNum);
+        int sumNums = 10;
+        System.out.println("Сумма чисел = " + sumNums);
 
         // Произведение цифр
         int productDigits = digit * digit;
@@ -64,8 +64,8 @@ class VariableNamesTheme {
         System.out.println("Математическое выражение - " + mathExpression);
 
         // Счёт в игре
-        String scoreInGame = "7:4";
-        System.out.println("Счёт в игре - " + scoreInGame);
+        String gameScore = "7:4";
+        System.out.println("Счёт в игре - " + gameScore);
 
         // Максимальная длина
         int maxLegth = 4;
@@ -112,8 +112,8 @@ class VariableNamesTheme {
         System.out.println("Путь до файла " + path);
 
         // Количество чисел в каждой строке
-        int countNumInEveryRow = 20;
-        System.out.println("Количество чисел в каждой строке = " + countNumInEveryRow + "\n");
+        int countNumInPerRow = 20;
+        System.out.println("Количество чисел в каждой строке = " + countNumInPerRow + "\n");
 
         // Начало блока Boolean-переменные
         System.out.println("2. Boolean-переменные");
@@ -158,12 +158,12 @@ class VariableNamesTheme {
         System.out.println("3. Аббревиатуры");
 
         // Старый universally unique identifier
-        String uuid = "UUID";
-        System.out.println("Старый universally unique identifier - " + uuid);
+        String oldUuid = "UUID";
+        System.out.println("Старый universally unique identifier - " + oldUuid);
 
         // Производитель оперативной памяти
-        String ram = "Crucial";
-        System.out.println("Производитель оперативной памяти - " + ram);
+        String manufacturerRam = "Crucial";
+        System.out.println("Производитель оперативной памяти - " + manufacturerRam);
 
         // Емкость жесткого диска
         String volumeHdd = "HHD";
@@ -174,12 +174,12 @@ class VariableNamesTheme {
         System.out.println("Протокол передачи гипертекста - " + http);
 
         // Сокращенный uniform resource locator
-        String url = "URL";
-        System.out.println("Сокращенный uniform resource locator - " + url);
+        String shortUrl = "URL";
+        System.out.println("Сокращенный uniform resource locator - " + shortUrl);
 
         // Новый идентификатор клиента
-        String cuid = "CUID";
-        System.out.println("Новый идентификатор клиента " + cuid);
+        String newCuid = "CUID";
+        System.out.println("Новый идентификатор клиента " + newCuid);
 
         // American standard code for information interchange
         String ascii = "ASCII";
