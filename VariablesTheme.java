@@ -50,9 +50,9 @@ class VariablesTheme {
         System.out.println(--maxShort + "\n");
 
         char maxChar = 65535;
-        System.out.println(maxChar);
-        System.out.println(++maxChar);
-        System.out.println(--maxChar + "\n");
+        System.out.println((int)maxChar);
+        System.out.println((int)++maxChar);
+        System.out.println((int)--maxChar + "\n");
 
         int maxInt = 2147483647;
         System.out.println(maxInt);
@@ -112,8 +112,8 @@ class VariablesTheme {
         char rightParenthesis = ')';
         System.out.println("    " + slash + backslash);
         System.out.println("   " + slash + "  " + backslash);
-        System.out.println("  " + slash + underscore + leftParenthesis + " " + rightParenthesis +
-                backslash);
+        System.out.println("  " + slash + underscore + leftParenthesis + 
+                " " + rightParenthesis + backslash);
         System.out.println(" " + slash + "      " + backslash);
         System.out.println("" + slash + underscore + underscore + underscore + underscore + slash + 
                 backslash + underscore + underscore + backslash + "\n");
