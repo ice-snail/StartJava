@@ -41,9 +41,8 @@ class IfElseStatementTheme {
         } else {
             System.out.println("Числа равны");
         }
-        System.out.println();
 
-        System.out.println("3. Проверка числа");
+        System.out.println("\n3. Проверка числа");
         int num = 12;
         if (num == 0) {
             System.out.println("Число является 0");
@@ -101,15 +100,14 @@ class IfElseStatementTheme {
 
         System.out.println("\n6. Подсчет начисленных банком %");
         double contribution = 321123.59;
-        System.out.println("Сумма вклада составляет " + contribution + " руб.");
-        double sumAccrual = 0.0;
+        double percent = 0.07;
         if (contribution < 100_000) {
-            sumAccrual = contribution * 0.05;
+            percent = 0.05;
         } else if (contribution > 300_000) {
-            sumAccrual = contribution * 0.10;
-        } else {
-            sumAccrual = contribution * 0.07;
+            percent = 0.10;
         }
+        double sumAccrual = contribution * percent;
+        System.out.println("Сумма вклада составляет " + contribution + " руб.");
         System.out.println("Сумма начисленных процентов составляет " + sumAccrual + " руб.");
         System.out.println("Итоговая сумма равна " + (contribution + sumAccrual) + " руб");
 
@@ -157,7 +155,8 @@ class IfElseStatementTheme {
         var profitMonthBd = salesMonthBd.subtract(spendingMonthBd);
         var monthsInYearBd = new BigDecimal("12");
         var profitYearBd = profitMonthBd.multiply(monthsInYearBd).setScale(2, RoundingMode.HALF_UP);
-        if (profitYearBd.toPlainString().charAt(0) == '-') {
+        var zero = new BigDecimal("0");
+        if (profitYearBd.compareTo(zero) < 0) {
             System.out.println("Прибыль за год: " + profitYearBd);
         } else {
             System.out.println("Прибыль за год: +" + profitYearBd);
@@ -165,29 +164,17 @@ class IfElseStatementTheme {
 
         System.out.println("\n10. Подсчет начисленных банком % c BigDecimal");
         var contributionBd = new BigDecimal("321123.59");
-        var percent5 = new BigDecimal("0.05");
-        var percent7 = new BigDecimal("0.07");
-        var percent10 = new BigDecimal("0.10");
+        var percentBd = new BigDecimal("0.07");
         var conditionPercent5 = new BigDecimal("100000");
         var conditionPercent10 = new BigDecimal("300000");
-        if (contributionBd.compareTo(conditionPercent5) > 0) {
-            if (contributionBd.compareTo(conditionPercent10) > 0) {
-                var sumAccrualBd = contributionBd.multiply(percent10).setScale(2, RoundingMode.HALF_UP);
-                System.out.println("Сумма начисленных процентов составляет " + 
-                        sumAccrualBd + " руб.");
-                System.out.println("Итоговая сумма равна " + 
-                        contributionBd.add(sumAccrualBd) + " руб");
-            } else {
-                var sumAccrualBd = contributionBd.multiply(percent7).setScale(2, RoundingMode.HALF_UP);
-                System.out.println("Сумма начисленных процентов составляет " + 
-                        sumAccrualBd + " руб.");
-                System.out.println("Итоговая сумма равна " + 
-                        contributionBd.add(sumAccrualBd) + " руб");
-            }
-        } else {
-            var sumAccrualBd = contributionBd.multiply(percent5).setScale(2, RoundingMode.HALF_UP);
+        if (contributionBd.compareTo(conditionPercent5) < 0) {
+            percentBd = new BigDecimal("0.05");
+        } else if (contributionBd.compareTo(conditionPercent10) > 0) {
+            percentBd = new BigDecimal("0.10");
+        }
+            var sumAccrualBd = contributionBd.multiply(percentBd).setScale(2, RoundingMode.HALF_UP);
+            System.out.println("Сумма вклада составляет " + contributionBd + " руб.");
             System.out.println("Сумма начисленных процентов составляет " + sumAccrualBd + " руб.");
             System.out.println("Итоговая сумма равна " + contributionBd.add(sumAccrualBd) + " руб");
-        }
     }
 }
