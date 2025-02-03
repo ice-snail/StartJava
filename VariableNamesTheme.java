@@ -8,48 +8,48 @@ class VariableNamesTheme {
         System.out.println("Цифра " + digit);
 
         // Сумма чисел
-        int sumNums = 10;
-        System.out.println("Сумма чисел = " + sumNums);
+        int numsSum = 10;
+        System.out.println("Сумма чисел = " + numsSum);
 
         // Произведение цифр
-        int productDigits = digit * digit;
-        System.out.println("Произведение цифр = " + productDigits);
+        int digitsProduct = digit * digit;
+        System.out.println("Произведение цифр = " + digitsProduct);
 
         // Максимальное число
         int maxNum = 999;
         System.out.println("Максимальное число = " + maxNum);
 
         // Количество десятков
-        int countOfDecades = 8;
-        System.out.println("Количество десятков = " + countOfDecades);
+        int tenCount = 8;
+        System.out.println("Количество десятков = " + tenCount);
 
         // Вес собаки
-        int weightDog = 4;
-        System.out.println("Вес собаки = " + weightDog + " кг");
+        int dogWeight = 4;
+        System.out.println("Вес собаки = " + dogWeight + " кг");
 
         // Исходное число
         int originNum = 1;
         System.out.println("Исходное число = " + originNum);
 
         // Процент по вкладу
-        int percentDeposit = 11;
-        System.out.println("Процент по вкладу = " + percentDeposit + " %");
+        int depositPercent = 11;
+        System.out.println("Процент по вкладу = " + depositPercent + " %");
 
         // Переменная хранит символ &
         int symbol = '&';
         System.out.println("Переменная хранит символ - " + symbol);
 
         // Код ошибки
-        int codeError = 404;
-        System.out.println("Код ошибки = " + codeError);
+        int errorCode = 404;
+        System.out.println("Код ошибки = " + errorCode);
 
         // Тип сообщения
         String typeOfMessage = "СПАМ";
         System.out.println("Тип сообщения - " + typeOfMessage);
 
         // Число нулей
-        int countOfZeros = 12;
-        System.out.println("Число нулей = " + countOfZeros);
+        int zerosCount = 12;
+        System.out.println("Число нулей = " + zerosCount);
 
         // Уникальное число
         int uniqueNum = 47;
@@ -68,16 +68,16 @@ class VariableNamesTheme {
         System.out.println("Счёт в игре - " + gameScore);
 
         // Максимальная длина
-        int maxLegth = 4;
-        System.out.println("Максимальная длина = " + maxLegth + " метра");
+        int maxLength = 4;
+        System.out.println("Максимальная длина = " + maxLength + " метра");
 
         // Пункт меню
         String menuItem = "Контакты";
         System.out.println("Пункт меню = " + menuItem);
 
         // Стоимость кофе
-        int priceOfCoffee = 200;
-        System.out.println("Стоимость кофе = " + priceOfCoffee + " рублей");
+        int coffeePrice = 200;
+        System.out.println("Стоимость кофе = " + coffeePrice + " рублей");
 
         // Дата начала
         String startDate = "14.10.2024";
@@ -88,12 +88,12 @@ class VariableNamesTheme {
         System.out.println("Окончание диапазона = " + endOfRange);
 
         // Полное имя работника месяца
-        String fullNameOfEmployeeOfMonth = "Иванов Иван Иванович";
-        System.out.println("Полное имя работника месяца - " + fullNameOfEmployeeOfMonth);
+        String fullNameOfTheBestWorker = "Иванов Иван Иванович";
+        System.out.println("Полное имя работника месяца - " + fullNameOfTheBestWorker);
 
         // Заголовок электронной книги
-        String titleOfEbook = "Рассвет";
-        System.out.println("Заголовок электронной книги - " + titleOfEbook);
+        String ebookTitle = "Рассвет";
+        System.out.println("Заголовок электронной книги - " + ebookTitle);
 
         // Размер
         int size = 46;
@@ -112,27 +112,27 @@ class VariableNamesTheme {
         System.out.println("Путь до файла " + path);
 
         // Количество чисел в каждой строке
-        int countNumInPerRow = 20;
-        System.out.println("Количество чисел в каждой строке = " + countNumInPerRow + "\n");
+        int countOfNumsInPerRow = 20;
+        System.out.println("Количество чисел в каждой строке = " + countOfNumsInPerRow + "\n");
 
         // Начало блока Boolean-переменные
         System.out.println("2. Boolean-переменные");
 
         // Сотни равны?
-        boolean isEqualHundres = true;
-        System.out.println("Сотни равны? - " + isEqualHundres);
+        boolean isEqualsHundres = true;
+        System.out.println("Сотни равны? - " + isEqualsHundres);
 
         // Компьютер включен?
         boolean isComputerOn = true;
         System.out.println("Компьютер включен? - " + isComputerOn);
 
         // Есть равные цифры?
-        boolean hasEqualDigits = false;
-        System.out.println("Есть равные цифры? - " + hasEqualDigits);
+        boolean hasEqualsDigits = false;
+        System.out.println("Есть равные цифры? - " + hasEqualsDigits);
 
         // Создано?
-        boolean created = true;
-        System.out.println("Создано? - " + created);
+        boolean isCreated = true;
+        System.out.println("Создано? - " + isCreated);
 
         // Пустое?
         boolean empty = false;
@@ -140,7 +140,7 @@ class VariableNamesTheme {
 
         // Активное?
         boolean active = true;
-        System.out.println("Создано? - " + active);
+        System.out.println("Активное? - " + active);
 
         // Новое?
         boolean isNew = false;

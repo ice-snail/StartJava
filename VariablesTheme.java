@@ -2,34 +2,34 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 
 class VariablesTheme {
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         System.out.println("1. Вывод характеристик компьютера");
-        byte typeSystem = 64;
-        short countCores = 8;
-        int volumeRam = 16;
-        long volumeHhd = 2048L;
-        float typeUsb = 2.0f;
+        byte typeOfSystem = 64;
+        short coresCount = 8;
+        int ram = 16;
+        long hhd = 2048L;
+        float typeOfUsb = 2.0f;
         double freqCpu = 2.00;
-        char modelCpu = 'M';
-        String os = "WINDOWS";
-        System.out.println("Тип системы - " + typeSystem + " разрядная операционная система");
-        System.out.println("Количество ядер - " + countCores);
-        System.out.println("Объем операционной памяти - " + volumeRam + " Гб");
-        System.out.println("Объем памяти - " + volumeHhd + " Гб");
-        System.out.println("Вид разъема порта USB - USB " + typeUsb);
+        char modelOfCpu = 'M';
+        boolean hasOs = true;
+        System.out.println("Тип системы - " + typeOfSystem + " разрядная операционная система");
+        System.out.println("Количество ядер - " + coresCount);
+        System.out.println("Объем операционной памяти - " + ram + " Гб");
+        System.out.println("Объем памяти - " + hhd + " Гб");
+        System.out.println("Вид разъема порта USB - USB " + typeOfUsb);
         System.out.println("Частота процессора - " + freqCpu + " Гц");
-        System.out.println("Модель процессора - " + modelCpu + ".2");
-        System.out.println("Операционная система - " + os + "\n");
+        System.out.println("Модель процессора - " + modelOfCpu + ".2");
+        System.out.println("Наличие операционной системы - " + hasOs + "\n");
 
         System.out.println("2. Расчет стоимости товара со скидкой");
         double penPrice = 105.5;
         double bookPrice = 235.83;
         double discount = 0.11;
-        double sumDiscount = (penPrice + bookPrice) * discount;
+        double discountSum = (penPrice + bookPrice) * discount;
         double discountPrice = (penPrice + bookPrice) * (1 - discount);
         System.out.println("Стоимость ручки = " + penPrice + " руб.");
         System.out.println("Стоимость книги = " + bookPrice + " руб.");
-        System.out.println("Сумма скидки = " + sumDiscount);
+        System.out.println("Сумма скидки = " + discountSum);
         System.out.println("Стоимость товаров со скидкой = " + discountPrice + " руб.\n");
 
         System.out.println("3. Вывод слова JAVA");
@@ -50,9 +50,9 @@ class VariablesTheme {
         System.out.println(--maxShort + "\n");
 
         char maxChar = 65535;
-        System.out.println((int)maxChar);
-        System.out.println((int)++maxChar);
-        System.out.println((int)--maxChar + "\n");
+        System.out.println((int) maxChar);
+        System.out.println((int) ++maxChar);
+        System.out.println((int) --maxChar + "\n");
 
         int maxInt = 2147483647;
         System.out.println(maxInt);
@@ -119,13 +119,13 @@ class VariablesTheme {
                 backslash + underscore + underscore + backslash + "\n");
 
         System.out.println("8. Манипуляции с сотнями, десятками и единицами числа");
-        int someNum = 123;
-        int hundreds = someNum / 100;
-        int tens = someNum % 100 / 10;
-        int ones = someNum % 10;
+        int num = 123;
+        int hundreds = num / 100;
+        int tens = num % 100 / 10;
+        int ones = num % 10;
         int sum = hundreds + tens + ones;
         int product = hundreds * tens * ones;
-        System.out.println("Число " + someNum + " содержит:");
+        System.out.println("Число " + num + " содержит:");
         System.out.println("сотен - " + hundreds);
         System.out.println("десятков - " + tens);
         System.out.println("единиц - " + ones);
@@ -147,12 +147,12 @@ class VariablesTheme {
         var bookPriceBd = new BigDecimal("235.83");
         var discountBd = new BigDecimal("0.11");
         var basePriceBd = penPriceBd.add(bookPriceBd);
-        var sumDiscountBd = basePriceBd.multiply(discountBd).setScale(2, RoundingMode.HALF_UP);
-        var discountPriceBd = basePriceBd.subtract(sumDiscountBd);
+        var discountSumBd = basePriceBd.multiply(discountBd).setScale(2, RoundingMode.HALF_UP);
+        var discountPriceBd = basePriceBd.subtract(discountSumBd);
         System.out.println("Стоимость ручки = " + penPriceBd);
         System.out.println("Стоимость книги = " + bookPriceBd);
         System.out.println("Стоимость товара без скидки = " + basePriceBd);
-        System.out.println("Сумма скидки = " + sumDiscountBd);
+        System.out.println("Сумма скидки = " + discountSumBd);
         System.out.println("Стоимость товаров со скидкой = " + discountPriceBd);
     }
 }
